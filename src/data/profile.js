@@ -17,7 +17,7 @@ export const profile = {
 
   instagram: "https://instagram.com/azzaaass",
 
-  image: "/profile.jpg",
+  image: "/profile.png",
 
   skills: [
     "Laravel",

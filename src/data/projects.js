@@ -8,18 +8,39 @@ export const projects = [
     role: "Fullstack Developer",
     duration: "-",
     status: "Selesai (Perlu pengembangan)",
-    thumbnail: "/projects/example.jpg",
-    hero: "/projects/example.jpg",
+    thumbnail: "/projects/ssc/thumbnail.png",
+    hero: "/projects/ssc/thumbnail.png",
     // Sub images / gallery detail project (bisa 1 - n gambar)
     gallery: [
       {
-        src: "/projects/example.jpg",
+        src: "/projects/ssc/landing_page.png",
         caption: "Landing page & dashboard utama",
+      },
+      {
+        src: "/projects/ssc/pengajuan.png",
+        caption: "Pengajuan peminjaman barang & surat",
+      },
+      {
+        src: "/projects/ssc/hasil_pengajuan.png",
+        caption: "Daftar pengajuan yang masih on-going",
+      },
+      {
+        src: "/projects/ssc/pengajuan_revisi.png",
+        caption: "Admin dapat menolak surat dan meminta revisi",
+      },
+      {
+        src: "/projects/ssc/persetujuan_revisi.png",
+        caption: "Admin melakukan pengecekan permohonan revisi dan menyetujui",
+      },
+      {
+        src: "/projects/ssc/pengajuan_selesai.png",
+        caption:
+          "Pengajuan telah di setujui semua pihak terkait dan siap dicetak",
       },
     ],
     description: "Sistem pemantauan peminjaman barang dan pembuatan surat",
     longDescription:
-      "Web ini merupakan sistem yang mencoba memangkas proses peminjaman barang dan pembuatan surat yang biasanya dilakukan secara manual. Dengan sistem ini, mahasiswa dapat meminjam barang dan membuat surat secara online, sehingga mengurangi waktu dan tenaga yang dibutuhkan.",
+      "Student Service Center (SSC) adalah aplikasi web yang dikembangkan untuk mendigitalisasi proses peminjaman barang dan pengajuan surat di lingkungan kampus. Sistem ini menggantikan proses manual yang sebelumnya mengharuskan mahasiswa mendatangi beberapa penanggung jawab. Dengan layanan berbasis online, proses administrasi menjadi lebih efisien, cepat, dan mudah dipantau oleh mahasiswa maupun pihak terkait.",
     tech: ["Laravel", "Tailwind CSS", "jQuery", "MySQL"],
     features: ["Autentikasi", "Dashboard", "Tracking Proses"],
     highlights: [
@@ -39,26 +60,21 @@ export const projects = [
     role: "Backend Developer",
     duration: "2 Minggu",
     status: "Selesai",
-    thumbnail: "/projects/example.jpg",
-    hero: "/projects/example.jpg",
+    thumbnail: "/projects/spm/route.png",
+    hero: "/projects/spm/route.png",
     // Sub images / gallery detail project (bisa 1 - n gambar)
-    gallery: [
-      {
-        src: "/projects/example.jpg",
-        caption: "Landing page & dashboard utama",
-      },
-    ],
-    description: "API untuk ",
+    gallery: [],
+    description:
+      "API untuk manajemen data Standar Penjaminan Mutu Tel-U Surabaya",
     longDescription:
-      "Web ini merupakan sistem yang mencoba memangkas proses peminjaman barang dan pembuatan surat yang biasanya dilakukan secara manual. Dengan sistem ini, mahasiswa dapat meminjam barang dan membuat surat secara online, sehingga mengurangi waktu dan tenaga yang dibutuhkan.",
-    tech: ["Laravel", "Tailwind CSS", "jQuery", "MySQL"],
+      "API ini merupakan projek magang yang ditujukan untuk mempermudah pengelolaan data Standar Penjaminan Mutu (SPM) di Telkom University Surabaya. API ini mendukung berbagai operasi CRUD (Create, Read, Update, Delete) serta parameter seperti searching, sorting dan pagination untuk data SPM, sehingga memudahkan pengelolaan dan integrasi dengan sistem lain yang digunakan di lingkungan kampus.",
+    tech: ["Laravel", "MySQL"],
     features: ["Autentikasi", "Dashboard", "Tracking Proses"],
     highlights: [
-      "Mengurangi waktu dan tenaga dalam proses peminjaman barang dan pembuatan surat",
-      "Sistem tracking untuk memantau proses pembuatan surat",
-      "Konsistensi data karena semua template sudah diatur sistem",
+      "Mendukung operasi CRUD untuk data SPM",
+      "Mendukung searching, sorting, dan pagination",
     ],
-    github: "dfddfa",
+    github: "https://github.com/azzaaass/spm_api/wiki",
     demo: "#",
   },
   {
@@ -147,9 +163,17 @@ export const projects = [
       },
     ],
     description: "Alat navigasi google maps untuk kendaraan (Terjual +300 pc)",
-    longDescription: "RASI Watch adalah smart display berbasis ESP32-C3 yang dirancang khusus untuk pengendara motor agar perjalanan menjadi lebih praktis, aman, dan informatif. Terhubung langsung dengan smartphone Android melalui Bluetooth, RASI Watch mampu menampilkan navigasi Google Maps secara real-time, informasi kendaraan, kontrol multimedia, hingga berbagai fitur kustomisasi yang dapat disesuaikan dengan kebutuhan pengguna.",
+    longDescription:
+      "RASI Watch adalah smart display berbasis ESP32-C3 yang dirancang khusus untuk pengendara motor agar perjalanan menjadi lebih praktis, aman, dan informatif. Terhubung langsung dengan smartphone Android melalui Bluetooth, RASI Watch mampu menampilkan navigasi Google Maps secara real-time, informasi kendaraan, kontrol multimedia, hingga berbagai fitur kustomisasi yang dapat disesuaikan dengan kebutuhan pengguna.",
     tech: ["ESP-32", "Chronos", "TinyGPS", "Web-Server ESP32", "Little FS"],
-    features: ["Navigasi Google Maps", "Kustom Pengaturan", "Pembacaan Voltmeter", "Spedometer Digital", "Pembacaan Temperature", "Jam Offline Basis Satelit"],
+    features: [
+      "Navigasi Google Maps",
+      "Kustom Pengaturan",
+      "Pembacaan Voltmeter",
+      "Spedometer Digital",
+      "Pembacaan Temperature",
+      "Jam Offline Basis Satelit",
+    ],
     highlights: [
       "Plug and Play pada kendaraan",
       "Custom booting, nama dan pengaturan",
@@ -160,15 +184,15 @@ export const projects = [
   },
   {
     id: 5,
-    slug: "rasi",
-    title: "Rasi",
+    slug: "rasi rgb",
+    title: "Rasi RGB",
     category: "IoT",
     year: "2025",
     role: "IoT Engineer",
     duration: "-",
     status: "Versi 1.7",
-    thumbnail: "/projects/rasi/hero.png",
-    hero: "/projects/rasi/hero.png",
+    thumbnail: "/projects/rasi_rgb/home_screen.png",
+    hero: "/projects/rasi_rgb/home_screen.png",
     // Sub images / gallery detail project (bisa 1 - n gambar)
     gallery: [
       {
@@ -197,9 +221,17 @@ export const projects = [
       },
     ],
     description: "Alat navigasi google maps untuk kendaraan (Terjual +300 pc)",
-    longDescription: "RASI Watch adalah smart display berbasis ESP32-C3 yang dirancang khusus untuk pengendara motor agar perjalanan menjadi lebih praktis, aman, dan informatif. Terhubung langsung dengan smartphone Android melalui Bluetooth, RASI Watch mampu menampilkan navigasi Google Maps secara real-time, informasi kendaraan, kontrol multimedia, hingga berbagai fitur kustomisasi yang dapat disesuaikan dengan kebutuhan pengguna.",
+    longDescription:
+      "RASI Watch adalah smart display berbasis ESP32-C3 yang dirancang khusus untuk pengendara motor agar perjalanan menjadi lebih praktis, aman, dan informatif. Terhubung langsung dengan smartphone Android melalui Bluetooth, RASI Watch mampu menampilkan navigasi Google Maps secara real-time, informasi kendaraan, kontrol multimedia, hingga berbagai fitur kustomisasi yang dapat disesuaikan dengan kebutuhan pengguna.",
     tech: ["ESP-32", "Chronos", "TinyGPS", "Web-Server ESP32", "Little FS"],
-    features: ["Navigasi Google Maps", "Kustom Pengaturan", "Pembacaan Voltmeter", "Spedometer Digital", "Pembacaan Temperature", "Jam Offline Basis Satelit"],
+    features: [
+      "Navigasi Google Maps",
+      "Kustom Pengaturan",
+      "Pembacaan Voltmeter",
+      "Spedometer Digital",
+      "Pembacaan Temperature",
+      "Jam Offline Basis Satelit",
+    ],
     highlights: [
       "Plug and Play pada kendaraan",
       "Custom booting, nama dan pengaturan",
